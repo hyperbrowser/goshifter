@@ -236,7 +236,7 @@ def snpLdTabix(snp,chrom,bp,tabixDir,window,r2min,ldInfo):
     """
     Retrieve LD info from the tabix file for a single SNP.
     """
-    file = os.path.join(tabixDir,'{}.EUR.tsv.gz')
+    file = os.path.join(tabixDir,'{}_GRCh38.EUR.ld.bgz')
     tabixFile = file.format(chrom)
     
     ldInfo.setdefault(snp,{})
